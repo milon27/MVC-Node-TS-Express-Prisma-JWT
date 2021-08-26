@@ -1,4 +1,4 @@
-## # Node Express Sequelize -MVC-setup
+## # Node Express Prisma -MVC-setup
 
 Set up MVC using Node, Express,Prisma (MySQL) , JWT and bcrypt.
 ___ 
