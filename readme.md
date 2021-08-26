@@ -60,7 +60,7 @@ ___
 "scripts": {
     "build": "rm -r dist/* &&  tsc",
     "clean": "rm -r dist/*",
-    "serve": "node dist/server.js",
+    "start": "node dist/server.js",
     "p-init": "prisma init",
     "p-mg": "prisma migrate dev --name init && prisma generate",
     "p-generate": "prisma generate",
