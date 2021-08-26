@@ -36,25 +36,50 @@ ___
 ___
  * routers
     * /middleware
-        * AuthMid.js
-        * ErrorMid.js
-    * authRouter.js
-    * testRouter.js
+        * AuthMid.ts
+        * ErrorMid.ts
+    * authRouter.ts
+    * testRouter.ts
  * controllers
-   * AuthController.js
-   * TestController.js
+   * AuthController.ts
+   * TestController.ts
  * models
-   * index.js
-   * Response.js (response format)
-   * AuthModel.js
-   * TestModel.js
+   * ApiResponse.ts (response format)
  * utils
-   * Define.js (all constant value)
-   * DB_Define.js (all SQL+DB constant value)
-   * Helper.js (all helper functions)
- * server.js
+   * Define.ts (all constant value)
+   * DB_Define.ts (all SQL+DB constant value)
+   * Helper.ts (all helper functions)
+ * server.ts
  * package.json
  * .env
+
+># Deployments
+
+>> scripts in package.json
+```json
+"scripts": {
+    "build": "rm -r dist/* &&  tsc",
+    "clean": "rm -r dist/*",
+    "serve": "node dist/server.js",
+    "p-init": "prisma init",
+    "p-mg": "prisma migrate dev --name init && prisma generate",
+    "p-generate": "prisma generate",
+    "dev": "nodemon server.ts"
+  },
+
+```
+
+>> how to deploy
+
+```javascript
+  //build the project
+  npm run build
+  //serve locally
+  npm run serve 
+  //serve in dev mode
+  npm run dev
+```
+
 
 
 <br/><br/><br/><br/>
