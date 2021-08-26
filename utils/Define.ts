@@ -15,6 +15,7 @@ const Define = {
         sameSite: 'lax',
         expires: new Date(0)
     } as CookieOptions,
+    UPLOAD_DESTINATION: "./uploads/",
     //pagination
     PAGINATE_PAGE_SIZE: 10,
     //moment js time constant
